@@ -1,0 +1,25 @@
+{
+  "name": "funnel",
+  "version": "1.0.0",
+  "description": "Javascript test selector",
+  "main": "mochaTestSelection.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slxiao/funnel.git"
+  },
+  "author": "shliangxiao@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/slxiao/funnel/issues"
+  },
+  "homepage": "https://github.com/slxiao/funnel#readme",
+  "bin": {
+    "funnel": "./bin/cli.js"
+  },
+  "dependencies": {
+    "commander": "^2.15.1"
+  }
+}
