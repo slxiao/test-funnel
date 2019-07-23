@@ -6,6 +6,17 @@
   "scripts": {
     "test": "jest"
   },
+  "keywords": [
+    "RTS",
+    "regression test",
+    "unit test",
+    "developer tool",
+    "CI",
+    "Javascript",
+    "mocha",
+    "jest",
+    "file dependencies"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/slxiao/funnel.git"
