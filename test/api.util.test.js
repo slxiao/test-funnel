@@ -1,6 +1,6 @@
 'use strict';
 
-import  { parse } from '../lib/util.js'
+import  { parse, twoArrayOverlap } from '../lib/util.js'
 
 test('Parse int variable should be ok', () => {
     expect(parse("%s", 1)).toBe("1");
