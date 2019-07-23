@@ -21,5 +21,8 @@
   },
   "dependencies": {
     "commander": "^2.15.1"
+  },
+  "devDependencies": {
+    "jest": "^24.8.0"
   }
 }
