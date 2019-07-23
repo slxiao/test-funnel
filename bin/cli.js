@@ -63,7 +63,7 @@ new Promise((resolve, reject) => {
 	.then(() => {
 		return funnel(config);
 	})
-	.catch((err) => {d
+	.catch((err) => {
 		console.log('\n%s %s\n', chalk.red('✖'), err.stack);
 		process.exit(1);
 	});
