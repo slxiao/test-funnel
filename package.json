@@ -2,9 +2,11 @@
   "name": "test-funnel",
   "version": "1.0.0",
   "description": "Javascript test selector",
-  "main": "mochaTestSelection.js",
+  "main": "bin/cli.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "babel bin -d dist",
+    "start": "npm run build && node dist/cli.js"
   },
   "jest": {
     "transform": {
@@ -39,7 +41,10 @@
     "commander": "^2.15.1"
   },
   "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
+    "babel-core": "^6.26.3",
     "babel-jest": "^24.8.0",
     "jest": "^24.8.0"
   }

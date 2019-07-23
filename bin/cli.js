@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
-const process = require('process');
+import proces from 'process';
+
 const program = require('commander');
 const version = require('../package.json').version;
 
