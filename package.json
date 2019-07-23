@@ -1,5 +1,5 @@
 {
-  "name": "funnel",
+  "name": "test-funnel",
   "version": "1.0.0",
   "description": "Javascript test selector",
   "main": "mochaTestSelection.js",
