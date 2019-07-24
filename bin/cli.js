@@ -2,7 +2,7 @@
 
 'use strict';
 
-const process = require('process');
+import process from 'process';
 const program = require('commander');
 const rc = require('rc')('funnel');
 const version = require('../package.json').version;
