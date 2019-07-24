@@ -35,7 +35,7 @@
   },
   "homepage": "https://github.com/slxiao/funnel#readme",
   "bin": {
-    "funnel": "./bin/cli.js"
+    "funnel": "./dist/bin/cli.js"
   },
   "dependencies": {
     "chalk": "^2.4.2",
