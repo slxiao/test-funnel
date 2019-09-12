@@ -1,10 +1,10 @@
 {
   "name": "test-funnel",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Javascript test selector",
   "main": "./bin/cli.js",
   "bin": {
-    "test-funnel": "./bin/cli.js"
+    "test-funnel": "./dist/bin/cli.js"
   },
   "scripts": {
     "test": "rimraf -rf dist && jest",
