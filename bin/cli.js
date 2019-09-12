@@ -10,11 +10,11 @@ const version = require('../package.json').version;
 program
 	.version(version)
 	.usage('[options]')
-	.option('-b, --basefolder <path>', 'folder of git repository')
-	.option('-t, --testfolder <path>', 'folder of test files')
-	.option('-e, --testfileextention <name>', 'extention of test files')
-	.option('-n, --newcommit <name>', 'new commit for comparison')
-	.option('-o, --oldcommit <name>', 'old commit for comparison')
+	.option('-b, --basefolder <path>', 'folder of git repository, default: ./')
+	.option('-t, --testfolder <path>', 'folder of test files, default: test')
+	.option('-e, --testfileextention <name>', 'extention of test files, default: test.js')
+	.option('-n, --newcommit <name>', 'new commit for comparison, default: HEAD~0')
+	.option('-o, --oldcommit <name>', 'old commit for comparison, default: HEAD~1')
 	.parse(process.argv);
 
 const funnel = require('../lib/api');
