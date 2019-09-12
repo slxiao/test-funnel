@@ -1,8 +1,11 @@
 {
   "name": "test-funnel",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Javascript test selector",
   "main": "bin/cli.js",
+  "bin": {
+    "test-funnel": "./dist/bin/cli.js"
+  },
   "scripts": {
     "test": "rimraf -rf dist && jest",
     "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
@@ -26,17 +29,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/slxiao/funnel.git"
+    "url": "git+https://github.com/slxiao/test-funnel.git"
   },
   "author": "slxiao1988@163.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/slxiao/funnel/issues"
+    "url": "https://github.com/slxiao/test-funnel/issues"
   },
-  "homepage": "https://github.com/slxiao/funnel#readme",
-  "bin": {
-    "funnel": "./dist/bin/cli.js"
-  },
+  "homepage": "https://github.com/slxiao/test-funnel#readme",
   "dependencies": {
     "chalk": "^2.4.2",
     "commander": "^2.15.1",
