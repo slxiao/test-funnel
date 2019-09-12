@@ -6,7 +6,7 @@
 		<img alt="Build Status" src="http://img.shields.io/travis/slxiao/test-funnel/master.svg?style=flat-square" />
 	</a>
 	<a href="https://www.npmjs.org/package/test-funnel">
-		<img alg="NPM Status" src="http://img.shields.io/npm/dm/madge.svg?style=flat-square" />
+		<img alg="NPM Status" src="http://img.shields.io/npm/dm/test-funnel.svg?style=flat-square" />
 	</a>
 </p>
 
