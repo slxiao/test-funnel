@@ -24,6 +24,19 @@ Some key points of **test-funnel**:
 $ npm -g install test-funnel
 ```
 # Usgae
+After installed, command `test-funnel` will be available. Run command `test-funnel -h` to get help guidelines.
+```shell
+Usage: test-funnel [options]
 
+Options:
+  -V, --version                   output the version number
+  -b, --basefolder <path>         folder of git repository, default: ./
+  -t, --testfolder <path>         folder of test files, default: test
+  -e, --testfileextention <name>  extention of test files, default: test.js
+  -n, --newcommit <name>          new commit for comparison, default: HEAD~0
+  -o, --oldcommit <name>          old commit for comparison, default: HEAD~1
+  -r, --runner <name>             test runner, could be one of jest/mocha, not trigger runner if not specified
+  -h, --help                      output usage information
+```
 # License
 MIT License
