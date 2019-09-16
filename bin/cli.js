@@ -15,6 +15,7 @@ program
 	.option('-e, --testfileextention <name>', 'extention of test files, default: test.js')
 	.option('-n, --newcommit <name>', 'new commit for comparison, default: HEAD~0')
 	.option('-o, --oldcommit <name>', 'old commit for comparison, default: HEAD~1')
+	.option('-r, --runner <name>', 'test runner, could be one of jest/mocha, not trigger runner if not specified')
 	.parse(process.argv);
 
 const funnel = require('../lib/api');
@@ -42,7 +43,8 @@ if (program.oldcommit) {
 	config.oldCommit = program.oldcommit;
 }
 
-funnel(config).then((res) => {
-	console.log(res.selected);
-	process.exit(exitCode);
-});
+if (program.runner) {
+	config.runner = program.runner;
+}
+
+funnel(config);

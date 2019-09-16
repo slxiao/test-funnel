@@ -7,9 +7,9 @@
     "test-funnel": "./dist/bin/cli.js"
   },
   "scripts": {
-    "test": "rimraf -rf dist && jest",
+    "test": "jest",
     "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
-    "start": "npm run build && node dist/bin/cli.js"
+    "start": "npm run build && node dist/bin/cli.js -r jest"
   },
   "jest": {
     "transform": {
