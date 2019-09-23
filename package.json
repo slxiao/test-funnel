@@ -1,6 +1,6 @@
 {
   "name": "test-funnel",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "description": "Javascript test selector",
   "main": "./bin/cli.js",
   "bin": {
@@ -9,7 +9,7 @@
   "scripts": {
     "test": "jest",
     "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
-    "start": "npm run build && node dist/bin/cli.js -r jest"
+    "start": "npm run build && node dist/bin/cli.js -r jest -o HEAD~7"
   },
   "jest": {
     "transform": {

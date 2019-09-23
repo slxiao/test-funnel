@@ -23,7 +23,7 @@ Some key points of **test-funnel**:
 ```shell
 $ npm -g install test-funnel
 ```
-# Usgae
+# CLI Usgae
 After installed, command `test-funnel` will be available. Run command `test-funnel -h` to get help guidelines.
 ```shell
 Usage: test-funnel [options]
@@ -37,6 +37,20 @@ Options:
   -o, --oldcommit <name>          old commit for comparison, default: HEAD~1
   -r, --runner <name>             test runner, could be one of jest/mocha, not trigger runner if not specified
   -h, --help                      output usage information
+```
+
+# API Usage
+```js
+var Funnel = require('test-funnel');
+​
+Funnel ({
+    baseFolder: "./",
+    testFolder: "test",
+    testFileExtention: "test.js",
+    newCommit: "HEAD~0",
+    oldCommit: "HEAD~1",
+    runner: ""
+});
 ```
 # License
 MIT License
