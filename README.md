@@ -18,7 +18,7 @@ Some key points of **test-funnel**:
 - Support specify commits for changed files extraction
 - Support extration, selection and exectution in one command
 
-[中文介绍](https://mp.weixin.qq.com/s/oq3-mJ7cA6f_lK0SviMVyw)
+[中文介绍](https://mp.weixin.qq.com/s/jDQbcYF_h0IQNNzQiseokg)
 
 # Installation
 ```shell
