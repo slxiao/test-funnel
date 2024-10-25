@@ -9,10 +9,11 @@
 name: Deno
 
 on:
-  push:
+  pud2sh:
     branches: ["master"]
   pull_request:
     branches: ["master"]
+    
 
 permissions:
   contents: read
@@ -25,7 +26,7 @@ jobs:
       - name: Setup repo
         uses: actions/checkout@v3
 
-      - name: Setup Deno
+      - name: Setup Deno222
         # uses: denoland/setup-deno@v1
         uses: denoland/setup-deno@61fe2df320078202e33d7d5ad347e7dcfa0e8f31  # v1.1.2
         with:
@@ -37,6 +38,7 @@ jobs:
 
       - name: Run linter
         run: deno lint
+        run: demo
 
       - name: Run tests
         run: deno test -A
